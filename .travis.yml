@@ -1,0 +1,37 @@
+os:
+  - linux
+  #- osx
+
+language: cpp
+sudo: required
+
+script:
+  - mkdir build && cd build
+  - cmake ..
+  - make -kj2
+
+compiler:
+  - clang
+  - gcc
+
+addons:
+  apt:
+    packages:
+      - qt5-default
+      - libsodium-dev
+#  homebrew:
+#    packages:
+#      - sdl2
+#      - sdl2_mixer
+#      - sdl2_image
+#      - glew
+#      - glm
+#    update: true
+
+#addons:
+#  sonarcloud:
+#    organization: "xxx" # token is set in Travis build env variable
+
+#notifications:
+#  webhooks:
+#    - https://krake.one/travis-ci/402390990402355201/9O9q4_MrVt5-VI-XGU5GKndoCebPJyVyBaEbLjzDijN-hhcLI9SqyfNLpzLaq3QEESMV
