@@ -19,6 +19,7 @@ addons:
     packages:
       - qt5-default
       - qtmultimedia5-dev
+      - qttools5-dev
       - libsodium-dev
 #  homebrew:
 #    packages:
