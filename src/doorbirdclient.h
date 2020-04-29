@@ -3,9 +3,9 @@
 
 #include <QObject>
 #include <QtNetwork/QNetworkAccessManager>
+#include <QUrl>
 
 class QUdpSocket;
-class QUrl;
 
 class DoorbirdClient : public QObject
 {
