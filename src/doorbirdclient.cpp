@@ -11,6 +11,7 @@
 #include <QJsonObject>
 #include <QEventLoop>
 #include <QThread>
+#include <QUrl>
 
 #include <sodium.h>
 #include <arpa/inet.h>
