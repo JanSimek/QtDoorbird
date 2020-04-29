@@ -76,31 +76,21 @@
     </message>
     <message>
         <location filename="../src/settingsdialog.ui" line="38"/>
-        <source>Username:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/settingsdialog.ui" line="48"/>
-        <source>Password:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/settingsdialog.ui" line="65"/>
-        <source>Camera IP addr.:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/settingsdialog.ui" line="72"/>
         <source>Doorbird IP addr.:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/settingsdialog.ui" line="88"/>
+        <location filename="../src/settingsdialog.ui" line="48"/>
+        <source>Camera IP addr.:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/settingsdialog.ui" line="64"/>
         <source>Shortcuts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/settingsdialog.ui" line="100"/>
+        <location filename="../src/settingsdialog.ui" line="76"/>
         <source>TODO</source>
         <translation type="unfinished"></translation>
     </message>
