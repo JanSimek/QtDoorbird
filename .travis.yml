@@ -8,7 +8,8 @@ sudo: required
 
 script:
   - mkdir build && cd build
-  - cmake ..
+  - if [[ ${TRAVIS_OS_NAME} == osx ]]; then cmake -DQt5_DIR=$(brew --prefix qt)/lib/cmake/Qt5 .. ; fi
+  - if [[ ${TRAVIS_OS_NAME} == linux ]]; then cmake .. ; fi
   - VERBOSE=1 make -kj2
 
 compiler:
@@ -28,6 +29,13 @@ addons:
       - libsodium
       - qt
     update: true
+
+before_script:
+  - if [[ ${TRAVIS_OS_NAME} == osx ]]; then brew link qt5 --force ; fi
+
+cache:
+  directories:
+    - "$HOME/Library/Caches/Homebrew"
 
 #addons:
 #  sonarcloud:
