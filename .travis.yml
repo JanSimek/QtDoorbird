@@ -1,7 +1,7 @@
 
 os:
   - linux
-  #- osx
+  - osx
 
 language: cpp
 sudo: required
@@ -9,8 +9,7 @@ sudo: required
 script:
   - mkdir build && cd build
   - cmake ..
-  - make
-  # make -kj2
+  - VERBOSE=1 make -kj2
 
 compiler:
   - clang
@@ -24,14 +23,11 @@ addons:
       - qttools5-dev
       - qttools5-dev-tools
       - libsodium-dev
-#  homebrew:
-#    packages:
-#      - sdl2
-#      - sdl2_mixer
-#      - sdl2_image
-#      - glew
-#      - glm
-#    update: true
+  homebrew:
+    packages:
+      - libsodium
+      - qt
+    update: true
 
 #addons:
 #  sonarcloud:
